@@ -1,94 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Adi Kurniawan</title>
-</head>
-<body>
-    <br>
-    <br><br><br><br><br>
-    <center>
-        <img src="./foto.jpg" width="200" height="200" style="object-fit: cover;" alt="Adi Kurniawan">
-        <header>
-            <h1>Adi Kurniawan</h1>
-        </header>
-        <hr width="500px">
-            <button>
-                <a href="./index.html">
-                    Home
-                </a>
-            </button>
-            <button>
-                <a href="./about.html">
-                    About Me
-                </a>
-            </button>
-            <button>
-                <a href="./contact.html">
-                    Contact
-                </a>
-            </button>
-        <hr width="500px">
-    </center>
-    <br><br><br><br>
-    <center>
-        <hr width="500px">
-        <h2>Bio Data</h2>
-        <hr width="500px">
-        <table width="500px" border="1">
-            <tr>
-                <td>Nama: </td>
-                <td>Adi Kurniawan</td>
-            </tr>
-            <tr>
-                <td>TTL: </td>
-                <td>Nganjuk, 19 Mei 2006</td>
-            </tr>
-            <tr>
-                <td>Jurusan/Sekolah: </td>
-                <td>RPL/SMKN 1 MEJAYAN</td>
-            </tr>
-            <tr>
-                <td>Alamat: </td>
-                <td>Sirapan, RT 11 RW 02, Kec Madiun, Kab Madiun, Jawa Timur, Indonesia</td>
-            </tr>
-            <tr>
-                <td>Hoby: </td>
-                <td>Membaca, Bermain game, dan Mengeksplore OS</td>
-            </tr>
-        </table>
-    </center>
-    <br><br><br><br>
-    <center>
-        <hr width="500px">
-        <h2>Moto Hidup</h2>
-        <hr width="500px">
-        <article>
-            <h3>Ngalah, Ngaleh, Ngabekti</h3>
-            <p>
-                Moto ini berasal dari falsafah Jawa yang menekankan tiga nilai utama: <strong>Ngalah</strong> (mengalah demi kedamaian), <strong>Ngaleh</strong> (beradaptasi tanpa kehilangan jati diri), dan <strong>Ngabekti</strong> (berbakti kepada orang tua, sesama, dan Tuhan). Ketiganya membentuk etika hidup yang menekankan harmoni, keluwesan, dan kesadaran spiritual.
-            </p>
-        </article>
-    
-        <hr>
-        
-        <article>
-            <h3>Tat Twam Asi</h3>
-            <p>
-                "Tat Twam Asi" adalah ajaran Hindu Vedanta yang berarti "Engkau adalah aku", mengajarkan bahwa semua makhluk memiliki esensi yang sama. Ajaran ini menumbuhkan empati dan kasih sayang, karena setiap tindakan kepada orang lain sejatinya adalah tindakan kepada diri sendiri, dan menjadi dasar hidup yang menghormati persatuan dalam keberagaman.
-            </p>
-        </article>
-        
-        <hr>
-        
-        <article>
-            <h3>Yen Dijiwit Kroso Loro Ojo Njiwit Marang Liyan</h3>
-            <p>
-                "Yen dijiwit kroso loro, ojo njiwit marang liyan" berarti "Jika dicubit itu terasa sakit, maka jangan mencubit orang lain." Ungkapan ini mengajarkan nilai empati dan etika timbal balik dalam budaya Jawa—bahwa kita seharusnya tidak melakukan sesuatu yang menyakitkan kepada orang lain jika kita sendiri tidak ingin diperlakukan demikian. Moto ini menanamkan kesadaran moral bahwa setiap tindakan terhadap orang lain harus dilandasi rasa saling memahami, dan menjadi pengingat agar kita hidup dengan rasa tenggang rasa, welas asih, dan tidak semena-mena.            </p>
-        </article>
+    <style>
+        header {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
 
-    </center>
-    <br><br><br><br>
+        header .intro {
+            padding-left: 100px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        header .intro h1 {
+            font-size: 60px;
+        }
+
+        header .intro h2 {
+            font-size: 20px;
+        }
+
+        header .profile-picture {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .profile-picture div img {
+            width: 250px;
+            height: 350px;
+            border-radius: 10px;
+            position: relative;
+            z-index: 10;
+            object-fit: cover;
+            rotate: 5deg;
+        }
+
+        .judul {
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="profile-picture">
+            <div>
+                <img src="./foto.jpg" style="object-fit: cover;" alt="Adi Kurniawan">
+            </div>
+        </div>
+        <div class="intro">
+            <h1 class="text-primary judul">Adi Kurniawan</h1>
+            <h2>Backend Developer & Lifetime Learner </h2>
+            <p style="margin-top: 25px; font-weight: 400; font-size: 12px;">
+                Perkenalkan, nama saya Adi Kurniawan, seorang Programmer Teknologi Informasi yang berasal dari Jawa Timur. Bidang keahlian saya berfokus pada pengembangan aplikasi berbasis web.
+            </p>
+            <p style="font-weight: 400; font-size: 12px;">
+                Dalam pengembangan karir, saya sedang memperdalam kompetensi di bidang DevOps dengan pengalaman mengimplementasikan berbagai distribusi Linux untuk pengembangan infrastruktur server.
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <button>
+            <a href="./index.html">
+                Beranda
+            </a>
+        </button>
+        <button>
+            <a href="./about.html">
+                Tentang Saya
+            </a>
+        </button>
+        <button>
+            <a href="./portfolio.html">
+                Proyek
+            </a>
+        </button>
+        <button>
+            <a href="./contact.html">
+                Kontak
+            </a>
+        </button>
+    </nav>
+
+    <footer>
+        <p style="margin: 0; font-size: 14px;">© 2024 Adi Kurniawan. All rights reserved.</p>
+        <div style="margin-top: 10px;">
+            <a href="https://github.com/" style="color: #333; text-decoration: none; margin: 0 10px;">GitHub</a>
+            <a href="https://linkedin.com/" style="color: #333; text-decoration: none; margin: 0 10px;">LinkedIn</a>
+            <a href="mailto:contact@example.com" style="color: #333; text-decoration: none; margin: 0 10px;">Email</a>
+        </div>
+    </footer>
+
 </body>
+
 </html>
